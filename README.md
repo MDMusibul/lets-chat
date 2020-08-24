@@ -1,10 +1,18 @@
-This is a real time chat application made using ReachJS as the front-end and firebase as the back-end. This web application is a clone of popular chat application slack.
+This is a real time chat application made using ReactJS as the front-end and firebase as the back-end. This web application is a clone of popular chat application slack.
 
 to try this web application visit: https://chat-app-c9cae.web.app/
 
+
+
+
+
+
 __________________________________________________________________________________________________________________________________________
 
 __________________________________________________________________________________________________________________________________________
+
+
+
 
 
 ## Available Scripts
