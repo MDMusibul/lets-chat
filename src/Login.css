@@ -1,0 +1,27 @@
+.login {
+  height: 100vh;
+  background: #f8f8f8;  /* this will makee the backgroung of the entire page #f8f8f8 */
+  display: grid;  /* this and the below line will line will place it's content (here the login card) at the center of the page. */
+  place-items: center;
+}
+
+.login__container {
+  padding: 100px;
+  text-align: center;  /* making every thing inside to align center horizontally */
+  background-color: white;
+  border-radius: 10px;  /* using the background-color, border-radius, box-shadow and the display, place-item, background property od .login class we will be making a centerly placed card. We could have even use material-ui cards, but this is light weight. */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);  /* this line will add shadow to the container. */
+}
+
+.login__container > img {
+  object-fit: contain;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.login__container > button {
+  margin-top: 50px;
+  text-transform: inherit !important;  /* by default google make the text capital */
+  background-color: #0a8d48 !important;
+  color: white;
+}

@@ -1,0 +1,52 @@
+.sidebar {
+  color: white;  /* making the color of the text and icons inside the container white */
+  flex: 0.3;
+  background-color: var(--slack-color);  /* changing the backgrond color of the whole container */
+  border-top: 1px solid #49274b;
+  max-width: 260px;  /* making the side bar to take 260px in the screen, there will be responsive design but the max width will be limited to 260px */
+}
+
+.sidebar > hr {  /* targetting the hr that is above an below the channel options */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #49274b;
+}
+
+.sidebar__header {
+  display: flex; /* making both the container inside this conating to flex, making the pensil icon to go to the side of the log in user data */
+  border-bottom: 1px solid #49274b;
+  padding-bottom: 10px;
+  padding: 13px;
+}
+
+.sidebar__info {
+  flex: 1;  /* making the sidebar__info class to take 100% of its container */
+}
+
+.sidebar__info > h2 {  /* targetting the h2 directly inside the sidebar__info class */
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.sidebar__info > h3 {
+  display: flex;  /* the div contained two stuff the align them properly using align-item we use flex */
+  align-items: center;  /* for aligning the online indecator properly (vertically) */
+  font-size: 13px;
+  font-weight: 400;  /* this and the above one will only effect the text, not the icon */
+}
+
+.sidebar__info > h3 > .MuiSvgIcon-root {  /* as all the icon in material ui have same className so we are using nested selector. We could have added given a classname to the component but this is cleaner */
+  font-size: 14px;
+  margin-top: 1px;
+  margin-right: 2px;
+  color: green;
+}
+
+.sidebar__header > .MuiSvgIcon-root {  /* targetting the pencil icon */
+  padding: 8px;
+  color: #49274b;
+  font-size: 18px;  /* material ui icons are font cso we can change their size like this */
+  background-color: white;  /* this will make the background color of the place where pencil is place white, not the whole .sidebar__header class */
+  border-radius: 999px;  /* making the icon backgroung border round, not the sidebar__header class */
+}

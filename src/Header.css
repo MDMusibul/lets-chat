@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;  /* items will centered vertically */
+  justify-content: space-between; /* for horizontal spaceing between two element */
+  padding: 10px 0;  /* for padding at the top */
+  background-color: var(--slack-color);  /*the variable is defined in App.css file*/
+  color: white;  /* for coloring the text and icon in the container */
+}
+
+.header__left { /* by default the stuff inside this class were displzy block we are going to make it flex */
+  flex: 0.3;  /* to make it take 30% of its flex container(.header) */
+  display: flex;  /* making all the content inside this container to displzy flex which was by default displaying block */
+  align-items: center;  /* making the content vertically align at the center */
+  margin-left: 20px;  /* will give a left margin of 20px to this container */
+}
+
+.header__left > .MuiSvgIcon-root {  /* this class was added by  material ui to the avatar that we imported from Material UI */
+  margin-left: auto;  /* making the left margin auto will make all the extra space to be at middle */
+  margin-right: 30px;
+}
+
+.header__search {
+  flex: 0.4;  /* to make it take 40% of its flex container(.header) */
+  background-color: #421f44;  /* making the whole container color #421f44 */
+  text-align: center;  /* making every thing inside to align center horizontally */
+  display: flex;  /* making all the content inside this container to displzy flex which was by default displaying block */
+  padding: 0 50px;  /* as display flex was used, every thing got to the left and in a single row, so we use padding to shift the content inside the container */
+  color: gray;  /* make the icons and text inside the conatiner gray */
+  border: 1px gray solid;  /* to provide border to the whole container */
+  border-radius: 6px;  /* to provide border to the above formed border */
+}
+
+.header__search > input {  /* to point to the input field directly inside the header__search class */
+  background-color: transparent;  /* to make the input field to be trancparent in color which was by default white in color */
+  border: none;  /* to make the border of the input field go away */
+  text-align: center;  /* making every thing inside to align center horizontally */
+  min-width: 35vw;
+}
+
+.header__right {
+  flex: 0.3;  /* to make it take 30% of its flex container(.header) */
+  display: flex;  /* making the content inside to flex so that we can make the help icon to go to the right side of the container */
+  align-items: flex-end;  /* for making the help icon to go to the right */
+}
+
+.header__right > .MuiSvgIcon-root {  /* the step taken to make the help icon go right will work but won't have any effect due to the margin for the help icon, so in here we will be twiking the magin a bit */
+  margin-left: auto;
+  margin-right: 20px;
+}

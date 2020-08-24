@@ -1,0 +1,21 @@
+.message {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.message > img {
+  height: 50px;  /* we are setting up the profile image the given size */
+  width: 50px;
+  object-fit: contain;  /* so that the image never breaks the above mentioned asprent ratio */
+}
+
+.message__info {
+  padding-left: 10px;
+}
+
+.message__timestamp {
+  color: grey;
+  font-weight: 300;
+  font-size: 13px;
+}

@@ -1,0 +1,22 @@
+.chatInput {
+  border-radius: 20px;
+}
+
+.chatInput > form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.chatInput > form > input {
+  position: fixed;
+  bottom: 20px;
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.chatInput > form > button {
+  display: none !important;  /* we are hidding the button as due to the button we now have enter to click functionality, which we will be using instead of click. */
+}

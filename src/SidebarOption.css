@@ -1,0 +1,29 @@
+.sidebarOption {
+  display: flex;  /* to make the icon and the title to get in the same line */
+  align-items: center;  /* to align the content center vertically */
+  font-size: 12px;  /* changes the size of the text not the icon */
+  padding-left: 2px;  /* gives padding to the whole div */
+  cursor: pointer;  /* curser will become pointer once it hit the whole div */
+}
+
+.sidebarOption:hover {
+  opacity: 0.9;  /* this will add a bit more beauty to the hover effect, this decteases the opacity of the text and icon */
+  background-color: #340e36;
+}
+
+.sidebarOption__icon {
+  padding: 10px;
+  font-size: 15px !important;  /* this change the font size of material ui icon size, important is added to overwight the size of the material ui size */
+}
+
+.sidebarOption__channel {
+  padding: 10px 0;  /* giving padding to the channel name, not to all the sidebar options */
+}
+
+.sidebarOption__hash {  /* in the case of channel name we will treat the # as the icon */
+  padding: 10px;
+}
+
+.sidebarOption > h3 {
+  font-weight: 500;
+}

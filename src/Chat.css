@@ -1,0 +1,35 @@
+.chat {
+  flex: 0.7;  /* if we hadn't used this the the content would have take the minimum space it would fit in and thus collapsing into itself */
+  flex-grow: 1;  /* allows the flex to grow if it needs to */
+  overflow-y: scroll;  /* if the chat screen (not the sidebar) ever overflow we could able to scroll */
+  padding-bottom: 150px;
+}
+
+.chat__header {
+  display: flex;
+  align-items: center;  /* to align stuff inside of it vertically */
+  justify-content: space-between;  /* it will push appart headerLeft and  headerRight */
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat__channelName {
+  display: flex;  /* this will pull the chat name inline with the star icon */
+  text-transform: lowercase;  /* to transform the text inside the div to lower case */
+}
+
+.chat__channelName > .MuiSvgIcon-root {  /* targetting the star icon after the chat name */
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.chat__headerRight > p {  /* targetting the detail word */
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chat__headerRight > p > .MuiSvgIcon-root {  /* targetting the i tag infront of the detail word */
+  margin-right: 5px !important;  /* important keyword is used to overwight the material ui setting */
+  font-size: 16px;
+}
